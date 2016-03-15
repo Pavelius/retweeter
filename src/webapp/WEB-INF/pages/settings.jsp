@@ -41,7 +41,7 @@
         </div>
     </nav>
     <div>
-        <p><b>From which users you want to receive messages?</b></p>
+        <p><b>From whom do you want to receive messages?</b></p>
         <c:forEach items="${users}" var="user">
             <c:if test="${user_supliers.contains(user.id)}">
                 <input type="checkbox" checked name="users[]" value="${user.id}">${user.username}<br>
@@ -50,7 +50,7 @@
                 <input type="checkbox" name="users[]" value="${user.id}">${user.username}<br>
             </c:if>
         </c:forEach>
-        <p><b>On what subjects you want to receive messages?</b></p>
+        <p><b>On what subjects do you want to subscribe?</b></p>
         <c:forEach items="${subjects}" var="subject">
             <c:if test="${user_subects.contains(subject.id)}">
                 <input type="checkbox" checked name="subjects[]" value="${subject.id}">${subject.name}<br>
