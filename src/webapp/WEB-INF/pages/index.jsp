@@ -68,7 +68,7 @@
         <div class="col-md-4">
             <h2>Technologies</h2>
 
-            <p>Spring MVC, Spring Security, JPA (Hibernate), JPQL, JSTL, CSS, JS, Tweeter Bootstrap, Java Core.</p>
+            <p>Spring MVC, Spring Security, JPA (Hibernate), JPQL, JSTL, CSS, JS, Tweeter Bootstrap, Java Core. Deployed using Google Cloud Services.</p>
         </div>
         <div class="col-md-4">
             <h2>Currently in database</h2>

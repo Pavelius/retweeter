@@ -90,15 +90,17 @@ public class MessageService {
     @Transactional
     public List<Subject> parseSubjects(String string) {
         List<Subject> result = new ArrayList<Subject>();
-        for(String retval : string.split(",")) {
-            retval = retval.trim();
-            retval = retval.substring(0,1).toUpperCase() + retval.substring(1).toLowerCase();
-            try {
-                Subject s = subjectDAO.find(retval);
-                result.add(s);
-            } catch (NoResultException ex){
-                Subject s = subjectDAO.add(new Subject(retval));
-                result.add(s);
+        if(!string.isEmpty()) {
+            for(String retval : string.split(",")) {
+                retval = retval.trim();
+                retval = retval.substring(0,1).toUpperCase() + retval.substring(1).toLowerCase();
+                try {
+                    Subject s = subjectDAO.find(retval);
+                    result.add(s);
+                } catch (NoResultException ex){
+                    Subject s = subjectDAO.add(new Subject(retval));
+                    result.add(s);
+                }
             }
         }
         return result;

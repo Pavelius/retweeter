@@ -27,9 +27,11 @@
     </div>
   </nav>
   <ul>
-    <li>Name: Pavel Chistyakov.</li>
+    <li>Author: Pavel Chistyakov.</li>
     <li>Location: Kiev, Ukraine.</li>
-    <li>Source: can be fond on <a href="https://github.com/Pavelius/retweeter">github.</a>></li>
+    <li>Phone: (095)843-99-67, (068)598-98-09</li>
+    <li>E-mail: p000000000001@gmail.com</li>
+    <li>Source files: can be found on <a href="https://github.com/Pavelius/retweeter">github.</a></li>
   </ul>
   <footer>
     <p>&copy; Pavel Chistyakov 2016. For education purposes only.</p>
